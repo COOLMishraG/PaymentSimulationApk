@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "966447191243",
+    "project_id": "databaseexplore",
+    "storage_bucket": "databaseexplore.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966447191243:android:c344f8616944bd46ed374e",
+        "android_client_info": {
+          "package_name": "com.example.databaseexplore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzp11uLLt88t7BfKI6_kvoTMRGVD0Gfi8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

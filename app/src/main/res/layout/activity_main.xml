@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/NewUser"
+        android:layout_width="266dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="64dp"
+        android:text="New_User"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/Existing_User"
+        android:layout_width="0dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="84dp"
+        android:text="Existing_User"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/NewUser"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/NewUser"
+        app:layout_constraintTop_toBottomOf="@+id/NewUser" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="241dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="Welcome"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

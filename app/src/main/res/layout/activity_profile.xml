@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#556AD9"
+    android:backgroundTint="#252383"
+    tools:context=".profile">
+
+
+    <TextView
+        android:id="@+id/profilename"
+        android:layout_width="324dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#090606"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/moneyin"
+        android:layout_width="123dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="wait"
+        android:textColor="#CF2121"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="152dp"
+        android:layout_height="43dp"
+        android:background="#C5DF50"
+        android:backgroundTint="#FFEB3B"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="Balance"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/moneyin"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.284" />
+
+    <Button
+        android:id="@+id/profiletransfer"
+        android:layout_width="147dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="76dp"
+        android:background="#FFEB3B"
+        android:text="transfer"
+        android:textColorLink="#FFEB3B"
+        android:textSize="20sp"
+        app:cornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/profileaddmoney"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:text="AddMoney"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/profiletransfer"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/profiletransfer"
+        app:layout_constraintTop_toBottomOf="@+id/profiletransfer"
+        app:layout_constraintVertical_bias="0.233" />
+
+    <Button
+        android:id="@+id/profilesignout"
+        android:layout_width="135dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="60dp"
+        android:text="SignOut"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
