@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#788980"
     tools:context=".MainActivity">
 
     <Button
@@ -12,6 +13,7 @@
         android:layout_width="266dp"
         android:layout_height="81dp"
         android:layout_marginTop="64dp"
+        android:backgroundTint="#4E695C"
         android:text="New_User"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,6 +27,7 @@
         android:layout_width="0dp"
         android:layout_height="81dp"
         android:layout_marginTop="84dp"
+        android:backgroundTint="#4E695C"
         android:text="Existing_User"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/NewUser"

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#556AD9"
-    android:backgroundTint="#252383"
+    android:backgroundTint="#788980"
     tools:context=".profile">
 
 
@@ -17,7 +17,7 @@
         android:fontFamily="@font/aclonica"
         android:gravity="center"
         android:text="TextView"
-        android:textColor="#090606"
+        android:textColor="#F0F7F4"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
@@ -26,13 +26,15 @@
 
     <TextView
         android:id="@+id/moneyin"
-        android:layout_width="123dp"
-        android:layout_height="50dp"
+        android:layout_width="142dp"
+        android:layout_height="56dp"
+        android:background="#327C67"
+        android:backgroundTint="#327C67"
         android:fontFamily="@font/aclonica"
         android:gravity="center"
         android:text="wait"
-        android:textColor="#CF2121"
-        android:textSize="20sp"
+        android:textColor="#F0F7F4"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -42,57 +44,83 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="152dp"
-        android:layout_height="43dp"
+        android:layout_width="142dp"
+        android:layout_height="56dp"
         android:background="#C5DF50"
-        android:backgroundTint="#FFEB3B"
+        android:backgroundTint="#327C67"
         android:fontFamily="@font/aclonica"
         android:gravity="center"
         android:text="Balance"
+        android:textColor="#F0F7F4"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/moneyin"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.284" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/profiletransfer"
-        android:layout_width="147dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="76dp"
-        android:background="#FFEB3B"
-        android:text="transfer"
+        android:layout_width="131dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="#4E695C"
+        android:elevation="8dp"
+        android:shadowColor="#152714"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="4"
+        android:text="SEND->"
         android:textColorLink="#FFEB3B"
-        android:textSize="20sp"
+        android:textSize="16sp"
         app:cornerRadius="30dp"
-        app:layout_constraintEnd_toEndOf="@+id/textView3"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.058" />
 
     <Button
         android:id="@+id/profileaddmoney"
-        android:layout_width="0dp"
-        android:layout_height="65dp"
+        android:layout_width="141dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#4E695C"
+        android:elevation="8dp"
+        android:shadowColor="#152714"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="4"
         android:text="AddMoney"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/profiletransfer"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/profiletransfer"
-        app:layout_constraintTop_toBottomOf="@+id/profiletransfer"
-        app:layout_constraintVertical_bias="0.233" />
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/profiletransfer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/profiletransfer"
+        app:layout_constraintTop_toTopOf="@+id/profiletransfer" />
 
     <Button
         android:id="@+id/profilesignout"
-        android:layout_width="135dp"
-        android:layout_height="84dp"
-        android:layout_marginBottom="60dp"
+        android:layout_width="179dp"
+        android:layout_height="96dp"
+
+        android:layout_marginBottom="80dp"
         android:text="SignOut"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/dp"
+        android:layout_width="102dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/profilename"
+        app:layout_constraintStart_toStartOf="@+id/profilename"
+        app:layout_constraintTop_toBottomOf="@+id/profilename"
+        app:shapeAppearanceOverlay="@style/CircularImageView"
+        tools:srcCompat="@tools:sample/avatars" />
 </androidx.constraintlayout.widget.ConstraintLayout>

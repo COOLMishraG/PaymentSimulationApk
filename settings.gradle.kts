@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "databaseExplore"
+rootProject.name = "InformalPays"
 include(":app")
  
